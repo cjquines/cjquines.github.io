@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Demo | Ascent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+<link rel="stylesheet" href="/hexo-theme-ascent/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/hexo-theme-ascent/css/highlight.css">
+
+  
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+  <h1 id="title">
+    <a href="/hexo-theme-ascent/">Ascent</a>
+  </h1>
+  <nav>
+    
+    
+      
+      <a class="nav-link" href="/hexo-theme-ascent/">Home</a>
+    
+      
+        <span class="nav-spacer">×</span>
+      
+      <a class="nav-link" href="/hexo-theme-ascent/archives">Archives</a>
+    
+    
+  </nav>
+</header>
+
+    <div id="content">
+      <article id="post-Demo" class="article article-type-post" itemprop="blogPost" itemscope>
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 class="article-title" itemprop="headline name">
+      Demo
+    </h2>
+  
+
+
+        <div class="article-meta">
+          <time class="article-date" datetime="2020-05-19T02:01:47.000Z" itemprop="datePublished">May 18, 2020, 10:01 PM</time>
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        <h3 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h3><p>It is <em>H3 headers</em> that work best in Ascent; in Markdown you’d write this as <code>### Header</code>.</p>
+<ol>
+<li><strong>Lists.</strong> I think we should avoid nesting ordered lists within ordered lists. So when nesting a list underneath an ordered list, we’d usually make it unordered:<ul>
+<li>This is the first item of the nested list.</li>
+<li>This is the second item of the nested list.</li>
+</ul>
+</li>
+</ol>
+<a id="more"></a>
+
+<ol start="2">
+<li><p><strong>Tables.</strong> Following some general recommendations, similar to the ones that Butterick makes in <a href="https://practicaltypography.com/tables.html" target="_blank" rel="noopener"><em>Practical Typography</em></a>, tables do not have cell borders and are instead generously spaced:</p>
+<table>
+<thead>
+<tr>
+<th>Station</th>
+<th align="center">First train</th>
+<th align="right">Last train</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Santolan</td>
+<td align="center">4:30 AM</td>
+<td align="right">10:00 PM</td>
+</tr>
+<tr>
+<td>Recto</td>
+<td align="center">4:30 AM</td>
+<td align="right">10:30 PM</td>
+</tr>
+<tr>
+<td>Baclaran</td>
+<td align="center">5:00 AM</td>
+<td align="right">10:00 PM</td>
+</tr>
+<tr>
+<td>Roosevelt</td>
+<td align="center">5:00 AM</td>
+<td align="right">10:15 PM</td>
+</tr>
+</tbody></table>
+</li>
+<li><p><strong>Images.</strong> Here is a random photo, provided through <a href="https://picsum.photos/" target="_blank" rel="noopener">Lorem Picsum</a>. Refreshing the page will give a different picture. The picture is also a link.</p>
+</li>
+</ol>
+<p><a href="https://picsum.photos/" target="_blank" rel="noopener"><img src="https://picsum.photos/800/600" alt=""></a></p>
+<p>We will separate the next section with a line:</p>
+<hr>
+<p>Although not much emphasis is placed on making code blocks look very nice, they do look okay. This sample is taken from Mercurial’s <a href="https://www.mercurial-scm.org/repo/hg/file/default/mercurial/merge.py" target="_blank" rel="noopener">merge.py</a>:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@staticmethod</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getlocalkey</span><span class="params">(path)</span>:</span></span><br><span class="line">    <span class="string">"""hash the path of a local file context for storage in the .hg/merge</span></span><br><span class="line"><span class="string">    directory."""</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> hex(hashutil.sha1(path).digest())</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(self, fcl, fco, fca, fd)</span>:</span></span><br><span class="line">    <span class="string">"""add a new (potentially?) conflicting file the merge state</span></span><br><span class="line"><span class="string">    fcl: file context for local,</span></span><br><span class="line"><span class="string">    fco: file context for remote,</span></span><br><span class="line"><span class="string">    fca: file context for ancestors,</span></span><br><span class="line"><span class="string">    fd:  file path of the resulting merge.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    note: also write the local version to the `.hg/merge` directory.</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="keyword">if</span> fcl.isabsent():</span><br><span class="line">        localkey = nullhex</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        localkey = mergestate.getlocalkey(fcl.path())</span><br><span class="line">        self._repo.vfs.write(<span class="string">b'merge/'</span> + localkey, fcl.data())</span><br><span class="line">    self._state[fd] = [</span><br><span class="line">        MERGE_RECORD_UNRESOLVED,</span><br><span class="line">        localkey,</span><br><span class="line">        fcl.path(),</span><br><span class="line">        fca.path(),</span><br><span class="line">        hex(fca.filenode()),</span><br><span class="line">        fco.path(),</span><br><span class="line">        hex(fco.filenode()),</span><br><span class="line">        fcl.flags(),</span><br><span class="line">    ]</span><br><span class="line">    self._stateextras[fd] = &#123;<span class="string">b'ancestorlinknode'</span>: hex(fca.node())&#125;</span><br><span class="line">    self._dirty = <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<p>You may want to consider what this post looks like in both serif and sans-serif, and light and dark mode. You can toggle these by clicking the buttons in the lower-right of the screen. The styling is also fully responsive.</p>
+<p>Finally, here are the categories and tags for this post:</p>
+
+      
+    </div>
+    
+    
+    <div class="article-category">
+      
+        <b>Categories:</b>
+        <a class="article-category-link" href="/hexo-theme-ascent/categories/Foo/">Foo</a>, <a class="article-category-link" href="/hexo-theme-ascent/categories/Foo/Bar/">Bar</a>, <a class="article-category-link" href="/hexo-theme-ascent/categories/Foo/Bar/Baz/">Baz</a>
+      
+      
+        <br/>
+      
+      
+        <b>Tags:</b>
+        <a class="article-tag-link" href="/hexo-theme-ascent/tags/Bar/" rel="tag">Bar</a>, <a class="article-tag-link" href="/hexo-theme-ascent/tags/Baz/" rel="tag">Baz</a>, <a class="article-tag-link" href="/hexo-theme-ascent/tags/Foo/" rel="tag">Foo</a>
+      
+    </div>
+    
+    
+  </div>
+</article>
+
+  
+<nav id="article-nav" class="article-nav">
+  
+    <a href="/hexo-theme-ascent/2020/05/18/Ascent/" id="article-nav-newer" class="article-nav-link-wrap newer">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Ascent
+        
+      </div>
+    </a>
+  
+  
+    <a href="/hexo-theme-ascent/2020/05/16/Is-this-the-real-life/" id="article-nav-older" class="article-nav-link-wrap older">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          Is this the real life?
+        
+      </div>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+    </div>
+  </div>
+  
+
+
+
+
+<div id="settings-container">
+  <div id="dark-mode">dark</div>
+  <div id="sans-font">sans</div>
+</div>
+<script type="text/javascript">
+let d=document,r=d.documentElement.style,f=r.setProperty.bind(r),l=localStorage,s=l.getItem('s'),n=l.getItem('n'),m=d.getElementById("dark-mode"),b=()=>{f('--bg-color','#fafafa');f('--code-bg-color','#f4f4f4');f('--text-color','#212121');f('--secondary-color','#808080');f('--tertiary-color','#b0b0b0');f('--link-color','#b5c8cf');f('--link-hover-color','#618794');f('--link-bg-color','#dae4e7');f('--selection-color','#dae4e7');m.innerHTML="dark"},c=()=>{f('--bg-color','#212121');f('--code-bg-color','#292929');f('--text-color','#fff');f('--secondary-color','#c0c0c0');f('--tertiary-color','#6e6e6e');f('--link-color','#4d6b75');f('--link-hover-color','#96b1bb');f('--link-bg-color','#5d828e');f('--selection-color','#acc1c9');m.innerHTML="light"},o=d.getElementById("sans-font"),e=()=>{f('--body-stack','"Lora", "Georgia", "Times New Roman", serif');o.innerHTML="sans"},g=()=>{f('--body-stack','"Lato", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Verdana", sans-serif');o.innerHTML="serif"};m.onclick=()=>{if(s==2){s=1;l.setItem('s',s);c()}else{s=2;l.setItem('s',s);b()}};o.onclick=()=>{if(n==2){n=1;l.setItem('n',n);g()}else{n=2;l.setItem('n',n);e()}};if(!s){s=2;l.setItem('s',2)};if(s==1){c()};if(!n){n=2;l.setItem('n',2)};if(n==1){g()};
+</script>
+
+
+
+
+</body>
+</html>
