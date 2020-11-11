@@ -1,19 +1,5 @@
 @import url('//fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC:wght@400;900&display=swap');
  
-/* responsive stuff */
-@media all and (min-width:760px) {body {font-size: 20px}}
-@media all and (max-width:760px) {body {font-size: 19px}}
-@media all and (max-width:720px) {body {font-size: 18px}}
-@media all and (max-width:680px) {body {font-size: 17px}}
-@media all and (max-width:640px) {body {font-size: 16px}}
-@media all and (max-width:600px) {body {font-size: 15px}}
-@media all and (max-width:560px) {body {font-size: 14px}}
-@media all and (max-width:520px) {body {font-size: 13px}}
-@media all and (max-width:400px) {body {font-size: 12px}}
-@media all and (max-width:360px) {body {font-size: 11px}}
-@media all and (max-width:330px) {body {font-size: 10px}}
-@media all and (max-width:300px) {body {font-size: 9px}}
- 
 /* general */
 :root {
   --bg-color: #fafafa;
@@ -38,6 +24,8 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   font-family: var(--body-stack);
+  font-size: 16px;
+  font-size: clamp(16px, 2.4vw, 21px);
   margin: auto;
   min-height: 100%;
   position: relative;
@@ -48,9 +36,12 @@ body {
 #wrapper {
   background: none;
   border: none;
+  box-sizing: border-box;
   display: block;
   margin: 3rem auto 10rem auto;
-  width: 30em;
+  max-width: 100%;
+  padding: 1em;
+  width: 32em;
 }
  
 @media all and (max-width:760px) {#wrapper {margin-top: 3rem;}}
@@ -134,9 +125,15 @@ body {
 
 /* archive */
 .archives-wrap {
-  margin: 0.25em 0;
+  margin: 0.25rem 0;
   position: relative;
-  top: 0.5em;
+  top: 0.5rem;
+}
+
+@media all and (max-width:620px) {
+  .archives-wrap {
+    margin-left: 1rem;
+  }
 }
 
 .month {
@@ -169,6 +166,11 @@ body {
   position: relative;
 }
 
+.archive-article-header {
+  align-items: center;
+  display: inline-flex;
+}
+
 .archive-article-date {
   position: absolute;
   right: calc(100% - 1.5em);
@@ -182,9 +184,9 @@ body {
   font: inherit;
   left: 2em;
   letter-spacing: 0;
-  margin: 0.25em 0;
+  margin: 0;
+  max-width: 25rem;
   position: relative;
-  width: 28em;
   text-align: left;
   text-decoration: none;
   text-transform: none;
@@ -225,8 +227,8 @@ a {
   text-decoration: none;
 }
 
-p, ul, ol {
-  margin: 0 0 1em 0;
+p, ul, ol, h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1rem 0;
 }
 
 ul, ol {
@@ -238,26 +240,28 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.1em;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
-h1 {
+h1, h2 {
   font-size: 2em;
-  letter-spacing: 0.2em;
+  letter-spacing: 0;
+  margin-top: 2rem;
 }
 
 h2 {
   font-size: 1.5em;
-  letter-spacing: 0.15em;
 }
 
-h3 {
+h3, h4, h5, h6 {
   font-size: 1em;
   font-weight: bold;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
 }
 
 h4, h5, h6 {
   font-size: 0.9em;
+  margin-top: 1rem;
 }
 
 blockquote {
